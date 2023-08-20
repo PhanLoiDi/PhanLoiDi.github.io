@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/btl-lienhe.css">
+    <link rel="shortcut icon" href="images/shortcut_icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="js/btl-lienhe.js"></script>
+
+    <title>OpenFutureBank - Liên Hệ</title>
+</head>
+<body>
+    <div class="login" style="background-color: rgba(2, 166, 236, 0.5);">
+        <ul class="flex space-between">
+            <li>
+                <img src="images/logo.png" alt="demo" >
+            </li>
+            <li class="InternetBanking">
+                <a href="btl-login.html">
+                Internet   Banking
+                </a>
+            </li>
+            <li class="user">
+                <div class="UserMain"><i class="fa-regular fa-user" style="color: #ffffff;"></i> Tài khoản người dùng</div>
+                <div class="username">Tài khoản : <span class="usernameText"></span></div>
+                <div class="amount">Số dư: <span class="amountText"></span> VND</div>
+                <div class="Tab_UserInfo">
+                    <div class="Tab_Button">
+                        
+                    </div>
+                    <div class="Tab_UserShow">
+                       <div class="Tab_Pointer"></div>
+                       <button class="userInfo_Link">Hồ sơ chi tiết   <i class="fa-solid fa-user"></i></button> <br> 
+                       <button class="userLogOut">Đăng xuất   <i class="fa-solid fa-door-open"></i></button>
+                   </div> 
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <button class="buttonTop"><i class="fa-solid fa-arrow-up"></i></button>
+    </div>
+    <nav>
+        <ul class="menu flex">
+            <li>
+                <a href="btl-trangchu.html" >
+                    Trang Chủ
+                </a>
+            </li>
+            <li class="sub" onclick="ChuyenTien">
+                <a href="#">
+                    Dịch Vụ
+                </a>
+                <ul class="menu subcontent">
+                    <li><a href="btl-chuyentien.html">Chuyển tiền</a></li>
+                    <li><a href="#">Tiết kiệm</a></li>
+                    <li><a href="btl-baohiem.html">Bảo hiểm</a></li>
+                </ul>
+            </li>   
+            <li class="">
+                <a href="btl-lienhe.html">
+                    Liên Hệ
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Về chúng tôi 
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <section>
+         <div class="Section">
+         <div class="MainText">NGÂN HÀNG THƯƠNG MẠI CỔ PHẦN <i class="fa-solid fa-phone-volume"></i></div>
+         <div class="SubText">
+         <div><span>Hotline:</span>  0787 1113</div>
+         <div><span>Địa chỉ:</span>  79 Nguyễn Văn Hữu, tỉnh Đồng Nai, thành phố Hồ Chí Minh</div>
+         <div><span>Fax:</span>  028 39 225 888</div>
+         <div><span>Email chăm sóc khác hàng:</span>  chamsockhachang.@openfuturebank.com.vn</div>
+         <div><span>Facebook:</span>  chamsockhachhang.facebook.vn</div>
+         <div><span>Zalo:</span>  zalo.me/192581295797t6</div>
+         <div><span>Thời gian chăm sóc khách hàng:</span>  7h00 -- 11h30 / 13h30 -- 17h50</div>
+        </div>
+    </section>
+    <footer>
+        <div class="Download_DienThoai_BorderTop">
+           <div class="DownloadDienThoai flex justify_content">
+            <div class="Download_DienThoai_Text">Tải ứng dụng OFB Mobile Banking</div>
+           <img src="images/Download_DienThoai.png" alt="DownloadDienThoai" class="Download">
+           </div>
+        </div>
+        <div class="List">
+            <div class="List_Body flex">
+             <ul>
+                <li><a href="Skm_GioiThieu.html" style="color:#02A6EC;">TRANG CHỦ</a></li>
+             </ul>
+             <ul>
+                <li><span style="font-weight: bold;"><a href="Skm_Login.html">DỊCH VỤ</a></span> </li>
+                <li>Chuyển tiền</li>
+                <li>Tiết kiệm</li>
+                <li>Dịch vụ khác</li>
+             </ul>
+             <ul>
+                 <li><span style="font-weight: bold;">LIÊN HỆ</span></li>
+                 <li>Chăm sóc khách hàng</li>
+                 <li>Hotline : 0777 9999</li>
+             </ul>
+             <ul>
+                 <li><span style="font-weight: bold;">VỀ CHÚNG TÔI</span></li>
+             </ul>
+            </div>
+        </div>
+        <div class="CopyRightAddress flex">
+             <div style="padding-left: 20px;" class="CopyRight">BẢN QUYỀN © 2012 THUỘC VỀ NGÂN HÀNG OPEN FUTURE. ĐÃ ĐĂNG KÝ BẢN QUYỀN.</div>
+             <div class="Address">
+                <div style="padding-right: 20px;" class="Address_Text">NGÂN HÀNG OPEN FUTURE</div>
+                <div style="padding-right: 20px;">Địa chỉ: 97 Võ Văn Tần, Phường 6, Quận 3 TP. Hồ Chí Minh</div>
+                <div style="padding-right: 20px;">Điện thoại: 0777-9999</div>
+             </div>
+        </div>
+    </footer> 
+</body>
+</html>

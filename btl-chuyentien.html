@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/btl-chuyentien.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="js/btl-chuyentien.js"></script>
+    <title>OpenFutureBank - Chuyển Tiền</title>
+</head>
+<body>
+    <div class="login">
+        <ul class="flex space-between">
+            <li>
+                <img src="images/logo.png" alt="demo" >
+            </li>
+            <li class="InternetBanking">
+                <a href="btl-login.html">
+                Internet   Banking
+                </a>
+            </li>
+            <li class="user">
+                <div class="UserMain"><i class="fa-regular fa-user" style="color: #ffffff;"></i> Tài khoản người dùng</div>
+                <div class="username">Tài khoản : <span class="usernameText"></span></div>
+                <div class="amount">Số dư: <span class="amountText"></span> VND</div>
+                <div class="Tab_UserInfo">
+                    <div class="Tab_Button">
+                        
+                    </div>
+                    <div class="Tab_UserShow">
+                       <div class="Tab_Pointer"></div>
+                       <button class="userInfo_Link">Hồ sơ chi tiết   <i class="fa-solid fa-user"></i></button> <br> 
+                       <button class="userLogOut">Đăng xuất   <i class="fa-solid fa-door-open"></i></button>
+                   </div> 
+                </div>
+            </li>
+        </ul>
+    </div>
+    <nav>
+        <ul class="menu flex">
+            <li>
+                <a href="btl-trangchu.html">
+                    Trang Chủ
+                </a>    
+            </li>
+            <li class="sub" onclick="ChuyenTien">
+                <a href="#">
+                    Dịch Vụ
+                </a>
+                <ul class="menu subcontent">
+                    <li><a href="btl-chuyentien.html">Chuyển tiền</a></li>
+                    <li><a href="#">Tiết kiệm</a></li>
+                    <li><a href="btl-baohiem.html">Bảo hiểm</a></li>
+                </ul>
+            </li>   
+            <li class="">
+                <a href="btl-lienhe.html">
+                    Liên Hệ
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Về chúng tôi 
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <header>
+            <img src="images/cyber-monday-sale-credit-cards-keyboard.jpg" alt="Background-3">
+            <div class="Header_Text">
+                Hệ Thống Chuyển Tiền
+            </div> 
+    </header>
+    <section>
+        <div class="ChuyenTien_Form">
+            <div class="ThongTinTaiKhoan_Text" style="padding: 5px;"> Thông tin tài khoản</div>
+                <div class="ThongTinTaiKhoan">
+                    <div class="flex justify_contentCENTER">
+                  <div class="l"><span style = "color:grey">Số tài khoản :</span></div>
+                  <div class="r userID"></div>
+                </div>
+                <div class="flex justify_contentCENTER">
+                  <div class="l"><span style = "color:grey">Số dư :</span></div>
+                  <div class="r"> <span id="balance"></span> VND</div>
+                </div>
+                </div>  
+            <div class="TaiKhoanThuHuong_Text" style="padding: 5px;"> Thông tin tài khoản thụ hưởng</div>
+            <div class="ThongTinTaiKhoanThuHuong">
+                <form onsubmit="transfer(event)">
+                    <label for="receiver">Số tài khoản thụ hưởng</label>
+                    <input style="margin:10px 0 15px 0;" type="number" name="receiver" id="receiver">
+                    <label for="money">Số tiền chuyển khoản</label>
+                    <input style="margin:10px 0 15px 0;" type="number" name="money" id="amount"> <b class="VND">VND</b>
+                    <label  for="bank">Ngân hàng thụ hưởng</label><br>
+                    <select style="margin-top: 10px;" name="bank" id="bank"><br>
+                        <option value="MB Bank">MB Bank</option>
+                        <option value="ACB">ACB</option>
+                        <option value="BIDV">BIDV</option>
+                        <option value="Agribank">Agribank</option>
+                        <option value="Sacombank">Sacombank</option>
+                        <option value="Vietcombank">Vietcombank</option>
+                    </select>
+                    <input style="margin-top: 20px;" type="submit" value="Chuyển tiền" >
+                </form>
+            </div>
+            <div class="TaiKhoanThuHuong_Text" style="padding: 5px;">Lịch sử giao dịch</div>
+            <div class="LichSuGiaoDich">
+                <table id="history">
+                    <tr>
+                        <th>Ngày</th>
+                        <th>Người nhận</th>
+                        <th>Số tiền</th>
+                    </tr>
+                </table>
+            </div>
+        </div>    
+    </section>
+    <footer>
+        <div class="Download_DienThoai_BorderTop">
+           <div class="DownloadDienThoai flex justify_content">
+            <div class="Download_DienThoai_Text">Tải ứng dụng OFB Mobile Banking</div>
+           <img src="images/Download_DienThoai.png" alt="DownloadDienThoai" class="Download">
+           </div>
+        </div>
+        <div class="List">
+            <div class="List_Body flex">
+             <ul>
+                <li><a href="btl-trangchu.html" style="color:#02A6EC;">TRANG CHỦ</a></li>
+             </ul>
+             <ul>
+                <li><span style="font-weight: bold;"><a href="#">DỊCH VỤ</a></span> </li>
+                <li><a href="btl-chuyentien.html">Chuyển tiền</a></li>
+                <li>Tiết kiệm</li>
+                <li>Dịch vụ khác</li>
+             </ul>
+             <ul>
+                 <li><span style="font-weight: bold;">LIÊN HỆ</span></li>
+                 <li>Chăm sóc khách hàng</li>
+                 <li>Hotline : 0777 9999</li>
+             </ul>
+             <ul>
+                 <li><span style="font-weight: bold;">VỀ CHÚNG TÔI</span></li>
+             </ul>
+            </div>
+        </div>
+        <div class="CopyRightAddress flex">
+             <div style="padding-left: 20px;" class="CopyRight">BẢN QUYỀN © 2012 THUỘC VỀ NGÂN HÀNG OPEN FUTURE. ĐÃ ĐĂNG KÝ BẢN QUYỀN.</div>
+             <div class="Address">
+                <div style="padding-right: 20px;" class="Address_Text">NGÂN HÀNG OPEN FUTURE</div>
+                <div style="padding-right: 20px;">Địa chỉ: 97 Võ Văn Tần, Phường 6, Quận 3 TP. Hồ Chí Minh</div>
+                <div style="padding-right: 20px;">Điện thoại: 0777-9999</div>
+             </div>
+        </div>
+    </footer>   
+</body>
+</html>
+

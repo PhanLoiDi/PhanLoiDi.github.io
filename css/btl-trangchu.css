@@ -1,0 +1,654 @@
+/* ===========================================*/
+/* ===========================================*/
+/* ===========================================*/
+/* ===========================================*/
+/* ===========================================*/
+body {
+    --color1:#1724A9;
+    --color2:#D8DEE5;
+    --color3:#02A6EC;
+    --color4:#DFCDC3;
+    --colortext1: white;
+    margin:0;
+    
+}
+.justify_content {
+    justify-content: center;    
+}
+.space-between {
+    justify-content: space-between;
+}
+.flex {
+    display: flex;
+}   
+body{
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+/* LOGIN */
+.login {
+    height: 140px;
+    background-image: linear-gradient(white,#D8DEE5);
+}
+.login > ul.flex {
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+.login a {
+    padding: 10px;
+    color: white;
+}
+.InternetBanking {
+    display: block;
+    color: var(--colortext1);
+    padding: 20px;
+    width:32;
+}
+div.login > ul.flex > li:nth-child(1) {
+    padding: 0;
+}
+div.login li img {
+    width: 275%;
+}
+.login > ul.flex > li:nth-child(1){
+    padding: 10px;
+    width: 8%;
+}
+.loginButton {
+    font-weight: bold;
+    width: 100px;    
+    margin-top: 5px;
+    margin-right: 5px;
+    padding-top:20px;
+    padding-bottom: 20px;
+    color: white;
+    border: none;
+    background-color: var(--color2);
+}
+.loginButton:hover {
+    background-color: #979797;
+}
+.loginText{
+    margin: 5px;
+    padding: 10px;
+    border-style: solid;
+    border-color: var(--color2);
+    color:white;
+    background-color: rgba(93,103,105,0);
+}
+.loginText:hover{
+    border-color: rgba(12,12,12,0);
+    padding:10px;
+    background-color: rgba(93,103,105,0.3);
+}
+.loginPassword {
+    margin: 5px;
+    padding: 10px;
+    border-style: solid;
+    border-color: var(--color2);
+    color:white;
+    background-color: rgba(93,103,105,0);
+}
+.loginPassword:hover {
+    border-color: rgba(12,12,12,0);
+    padding:10px;
+    background-color: rgba(93,103,105,0.3);
+}
+.InternetBanking > a {
+    border-radius: 60px;
+    padding: 30px 50px;
+    color: white;
+    font-weight: bold;
+    background-color: var(--color1);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+}
+.InternetBanking > a:hover {
+    background-color: var(--color3);
+}
+/* BUTTON GO TO TOP */
+
+.buttonTop {
+    position: fixed;
+    background-color: var(--color1);
+    border-style:solid;
+    color: white;
+    border-radius: 50%;
+    font-size: 25px;
+    z-index: 4;
+    width: 60px;
+    height: 60px;
+    bottom: 80px;
+    right: 30px;
+    transform: translateY(10px);
+    opacity: 0.5;
+    transition: 0.5s;
+}
+.buttonTop:hover {
+    cursor: pointer;
+    background-color: var(--color2);
+    color: black;
+}
+.buttonTopAnimation {
+    transform: translateY(0px);
+    opacity: 1;
+}
+/* USER */
+li.user {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    list-style-type: none;
+    width:20%;
+    padding: 10px 50px;
+    border-radius: 20px;
+    color: white;
+    background-color: var(--color1);
+    text-align: start;
+    position: relative;
+}
+.Tab_UserShow {
+    width: 200px;
+    right: -15px;
+    bottom: -140px;
+    position: absolute;
+    transform: translateY(-15px);
+    transition: 0.5s;
+    opacity: 0;
+}
+.tabshow{
+    transform: translateY(0px);
+    opacity: 1;
+}
+.Tab_Pointer {
+    position: absolute;
+    content: "";
+    right: -1px;
+    top :-90px;
+    height: 30px;
+    border: 30px solid;
+    border-color: transparent transparent var(--color1) transparent;
+
+}
+.Tab_UserShow > button {
+    text-align: start;
+    padding-left: 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    border-radius: 15px;
+    border: 1px solid white;
+    height: 50px;
+    width: 100%;
+    background-color: var(--color1);
+    color: white;
+}
+.Tab_UserShow > button:hover{
+    cursor: pointer;
+    background-color: var(--color2);
+    color: black;
+}
+.float-right {
+    text-align:  end;
+}
+.UserMain {
+    font-weight: bold;
+    font-size: 25px;
+}
+.Tab_UserInfo {
+    z-index: 3;
+    position: relative;
+}
+.Tab_Button {
+    border: 3px solid white;
+    border-radius: 50%;
+    right: -15px;
+    bottom: -5px;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    transition: 0.5s;
+}
+.Tab_Button::before {
+    position: absolute;
+    right: 25%;
+    top: 70%;
+    content: "";
+    height: 3px;
+    width: 50%;
+    background-color:white;
+}
+.Tab_Button::after {
+    position: absolute;
+    right: 25%;
+    top: 25%;
+    content: "";
+    height: 3px;
+    width: 50%;
+    background-color:white;
+}
+.Tab_Button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.amount {
+    width: 60%;
+}
+/* NAV */
+.sticky {
+    z-index: 3;
+    width: 100%;
+    top: 0;
+    position: fixed;
+}
+ul.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;  
+    justify-content: center;
+    align-items: center ;
+}
+.subcontent {
+    padding: 0;
+    margin:0;
+    width:25%;
+    position: absolute;
+    z-index: 2;
+    transform: translateY(-15px);
+    transition-duration: 0.2s;
+    opacity: 0;
+}
+.shownav {
+    transform: translateY(0px);
+    opacity: 1;
+}
+.menu.flex > li {
+
+    font-weight:bold;
+    text-transform: uppercase;
+    background-color: var(--color1);
+    width:25%;
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition-delay: 0s;
+    transition: 0.5s;
+}
+.menu.flex > li:hover {
+    background-color: var(--color2);
+}
+.menu.flex > li:hover > a {
+    color: black;
+}
+.menu.subcontent > li:hover > a {
+    color:black;
+}
+.menu.flex a:visited {
+    background-color: var(--color2);
+}
+.menu.flex a {
+    display: block;
+}
+.menu.subcontent > li {
+    transition: 0.5s;
+    text-transform: uppercase;
+    margin: 0;
+    background-color:var(--color1);
+    color: white;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.menu.subcontent > li:hover {
+    background-color: var(--color2);
+}
+ul.menu li a {  
+    color: white;
+    text-decoration: none;
+    display:inline-block;
+    padding: 20px;
+}
+/* H E A D E R */
+header {
+    position: relative;
+    align-items: center;
+}
+header > img {
+    width: 100%;
+   background-repeat: no-repeat;
+}
+header > div {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.Header_Text {
+    width: 100%;
+    text-align: center;
+    color :#00FFFF;
+    text-shadow: 5px 5px black;
+    font-weight: bolder;
+    font-size: 5em;
+    position: absolute;
+    left:0;
+    top: 30%;
+    bottom: 40%;
+    letter-spacing: 4px;
+}
+
+.Header_SubText { 
+    text-align: center;
+    width: 100%;
+    color:white;  
+    font-weight: inherit;
+    font-style: italic;
+    font-size: 2em;
+    position: absolute;
+    top: 60%;
+    bottom: 40%;
+}
+/* FOOTER */
+/* FOOTER/DienThoai */
+.DownloadDienThoai {
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    height: 200px;
+    background-color:rgb(235, 235, 235);
+}
+.DownloadDienThoai img {
+    width: 20%;
+}
+.Download_DienThoai_Text {
+
+    font-size: 15px;
+    font-weight: bold;
+}
+/* FOOTER/List */
+.List {
+    background-color: var(--color2);
+    color: black;
+}
+.List_Body {
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+}
+.List_Body ul {
+    width: 20%;
+}
+.List_Body li {
+    padding: 5px 0;
+    margin: 10px 0;
+    text-align: start;
+    list-style-type: none;
+}
+.List_Body a {
+    font-weight: bold;  
+    text-decoration: none;
+}
+.List_Body a{
+    color: black;
+}
+.List_Body a:visited {
+    color: black;
+}
+.List_Body a:active {
+    color: #02A6EC;;
+}
+.List_Body ul {
+    padding: 20px;
+    margin: 0 60px;
+}
+.CopyRightAddress{
+    align-items: center;
+    background-color: var(--color1);
+    color: white;
+}
+.CopyRight {
+    text-align: start;
+    width: 50%;
+}
+.Address {
+    text-align: end;
+    width:50%;
+}
+.Address_Text {
+    font-size: 20px;
+    font-weight: bold;
+}
+div.Address>div {
+    margin: 5px;
+}
+/* S E C T I O N */
+section {
+    background-color: white;
+    width: 100%;
+}
+/* ===========================================*/
+/* ===========================================*/
+/* ===========================================*/
+/* ===========================================*/
+/* ===========================================*/
+/* GIOI THIEU */
+.GioiThieu {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 40px;
+    background-image: linear-gradient(#D8DEE5,white,white,white,white,white);
+}
+.GioiThieu_Text {
+    font-size: 2rem;
+    padding: 20px 0;
+}
+.GioiThieu_SubText {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin:0 auto;
+    display: block;
+    text-align: start;
+    width: 60%;
+    padding: 20px 40px; 
+    border-color: var(--color1);
+    border-style: solid;
+    border-radius: 30px;
+    font-size: 20px;
+}
+.GioiThieu_SubText span {
+    font-weight: bold;
+}   
+/* LICH SU */ 
+.LichSu {
+    width: 80%;
+    margin: 0 auto;
+}
+.LichSu_Text {
+    justify-content: center;
+    margin: 0 auto;
+}
+.LichSu_Text1 {  
+    border-top-left-radius: 20px;
+    margin-bottom: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    vertical-align: middle;
+    width: 40%;
+    list-style-type: none;
+    padding: 10px 15px;
+    color:black;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: var(--color2);
+}
+.LichSu_Text2 {  
+    border-top-right-radius: 20px;
+    margin-bottom: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    vertical-align: middle;
+    width: 40%;
+    list-style-type: none;
+    padding: 10px 15px;
+    color:black;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    background-color: var(--color2);
+}
+.LichSu_Text1:hover {
+    color:lightsalmon;
+}
+.LichSu_Text2:hover {
+    color:lightsalmon;
+}
+#LichSu_SubText_Main {
+    display: block;
+    margin:0 auto;
+    width: auto;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: start;
+    padding: 20px;
+    background-color: var(--color1);
+}
+.LichSu_SubText_Hover {     
+    display: block;
+    margin:0 auto;
+    width: auto;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: start;
+    padding: 20px;
+    background-color: var(--color1);
+}
+.active {
+    background-color: var(--color1);
+    color: white;
+}
+/*Tam Nhin va Su Menh */
+.flex.TamNhinVaSuMenh {
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 40px;   
+}
+.TamNhinVaSuMenh_Text {
+    text-shadow: 2px 3px black;
+    font-size: 2em;
+    padding: 10px 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+.TamNhinVaSuMenh > div {
+    border-radius: 20px;
+    width: 43%;
+    margin: 0;
+    display: block;
+    padding: 0;
+    background-color: var(--color1);
+    color: white;
+    padding: 20px;
+}
+.TamNhinVaSuMenh_SubText1 {
+    text-align: start;
+    padding-bottom: 20px;
+}
+#TamNhinVaSuMenh_SubText2 {
+    text-align: start;
+    padding-bottom: 20px;
+}
+#TamNhinVaSuMenh_SubText2_Hidden {
+    display: none;
+}
+.LichSuTamNhinSuMenhGiaTriCotLoi {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;;
+}
+/* GIA TRI COT LOI */
+.GiaTriCotLoi {
+    border-radius: 30px;
+    width:80%;
+    margin: 0 auto;
+    margin-top: 40px;
+    background-color: var(--color1);
+    color: white;
+}
+.GiaTriCotLoi_Text {
+    text-shadow: 2px 3px black;
+    font-size: 2em;
+    padding: 10px 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+.GiaTriCotLoi_List1{
+    text-align: start;
+}
+.GiaTriCotLoi_List2 {
+    text-align: start;
+}
+/* Giai thuong dat duoc */
+.GiaiThuongDatDuoc {
+    width: 100%;
+}
+.GiaiThuongDatDuoc_Text {
+    font-size: 2em;
+    padding: 20px 0;
+}
+.GiaiThuongDatDuoc_Body_BorderTop {
+    border-top: 3px solid var(--color1);
+}
+.GiaiThuongDatDuoc_Body {
+    padding: 0;
+    justify-content: center;
+    width: 80%;
+    margin:20px auto;
+    height: 100%;
+}
+.GiaiThuongDatDuoc_Body li {
+    padding: 10px;
+    width: 25%; 
+    list-style-type: none;
+}
+.GiaiThuongDatDuoc_Body li > div {
+    font-size: 0.7em;
+    font-weight: bold;
+    height: 30%;
+}
+.GiaiThuongDatDuoc_Body li > img {
+    width: 100%;
+    height: 70%;
+}
+.GiaiThuongDatDuoc_Body_Border1 {
+    margin-top: 15px;
+    margin-bottom: 56px;
+    border-right: 2px solid var(--color1);
+}
+.GiaiThuongDatDuoc_Body_Border2 {
+    margin-top: 15px;
+    margin-bottom: 56px;
+    border-left: 2px solid var(--color1);
+}
+/*CO CAU TO CHUC */
+.CoCauToChuc_Header {
+    border-top: 3px solid var(--color1);
+}
+.CoCauToChuc_Header_Text {
+    font-size: 2em;
+    padding: 20px 0;
+}
+.CoCauToChuc_Header_BanDieuHanh{
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    background-color: var(--color1);
+    width: 15%;
+    margin: 0 auto;
+    font-size: 20px;
+}
+.CoCauToChuc_Body {
+    width: 80%;
+    margin: 0 auto;
+}
+.CoCauToChuc_Body img {
+    width: 20%;
+}
+.CoCauToChuc_Body li {
+    align-items: center;
+    list-style-type: none;
+    font-size: 18px;
+}
+/* FOOTER */

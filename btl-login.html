@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/shortcut_icon.png">
+    <link rel="stylesheet" href="css/btl-login.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+   <script src="js/btl-login.js"></script>
+    <title>OpenFutureBank - Đăng nhập</title>
+</head>
+<body  style="background-image:url(images/login/login-background.jpg) ;">
+    <header class="flex">
+      <div><img src="images/shortcut_icon_white.png" alt=""></div>
+      <div class="TrangChuLink_Block"><a  class="TrangChuLink" href="btl-trangchu.html">Trang chủ</a></div>
+    </header>
+    <div class="body">
+        <div class="login-form">
+           <div class="header-text">
+                Chào mừng quý khách đến với 
+                <br> 
+                <span class="header-text1">OpenFutureBank</span>
+           </div>
+           <div class="input-form">
+             <input   required type="text"  title="this field is required" id="username" pattern="\S(.*\S)?"> 
+             <label for="" id="usernameText">Tài khoản</label> <br>
+             <input type="password" name="" id="password">
+             <label for="" id="passwordText">Mật khẩu</label>  <br>
+             <input type="checkbox" name="" id="show-password"><span class="show-password-text">Hiển thị mật khẩu</span>
+           </div>
+           <div class="login-forgot-form">
+             <div><button class="login-button flex"> ĐĂNG NHẬP </button></div>
+             <div class="forgot-button">Quên mật khẩu ?</div>
+           </div>
+           <div class="errorText">
+                Vui lòng kiểm tra lại tài khoản và mật khẩu
+           </div>
+        </div>
+      </div>
+    <footer>
+      <div class="CopyRight">BẢN QUYỀN © 2012 THUỘC VỀ NGÂN HÀNG OPEN FUTURE. ĐÃ ĐĂNG KÝ BẢN QUYỀN.</div>
+    </footer>
+</body>
+</html>
